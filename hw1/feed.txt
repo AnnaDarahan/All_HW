@@ -1,0 +1,5 @@
+- http://htmlbook.ru/html/big устаревший тег, в html 5 уже не поддерживается
+- http://joxi.ru/vAWnvvniqv3De2 оставляй одно подключение
+- http://joxi.ru/8AnqOOqf7ZNGo2 заголовки одного уровня
+- http://joxi.ru/12M6ll6C0VgbOA для дат используем тег time http://htmlbook.ru/html/time
+- http://joxi.ru/Vm6olloijg3dg2 соблюдай лесенку
