@@ -1,0 +1,41 @@
+/*1. Первый уровень*/
+blockquote {
+color: green;
+}
+/*2. Второй уровень*/
+a[href^="https://"]
+{
+  color: red;
+}
+.list > li:last-child a[href^="#"] {
+  background: blue;
+}
+ul ~ p:first-of-type {
+  font-size: 26px;
+}
+/*3. Второй уровень ("работаю с css-ом"*/
+.text-box > h3:first-of-type {
+  color: pink;
+}
+#greycol {
+  color: grey;
+}
+.text-box > div p {
+  color: red;
+}
+.text-box > p:nth-child(7n) {
+  color: green;
+}
+.yellow {
+  color: yellow;
+}
+/*4. Кто совсем молодец ("по желанию")*/
+.bg-box {
+  width: 100%;
+  height: 700px;
+  background: url(../images/lamp.png) repeat-x top / 50px,
+    url(../images/grass.png) repeat-x bottom / 150px,
+    url(../images/field.jpg) no-repeat center / 400px,
+    url(../images/hedgehog.png) repeat-y left / 80px,
+    url(../images/donut.png) repeat-y right / 80px green;
+}
