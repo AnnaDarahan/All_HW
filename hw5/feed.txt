@@ -1,0 +1,2 @@
+// 10
+- http://joxi.ru/xAeM66Mhg0nYpA надо задать минимальную высоту min-height: 100vh; вместо height

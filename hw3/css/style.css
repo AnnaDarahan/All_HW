@@ -1,0 +1,59 @@
+.world {
+  width: 350px;
+  height: 300px;
+  padding: 15px 10px 20px 10px;
+  margin-bottom: 30px;
+  border: red 2px dashed;
+  background: green;
+}
+.lorem {
+  width: 70%;
+  text-align: justify;
+  margin: 10px;
+}
+.lorem::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.html {
+  float: left;
+  width: 285px;
+  margin: 0px 20px 20px 0px;
+}
+.css {
+  float: right;
+  width: 240px;
+  margin: 20px 0px 20px 20px;
+}
+/* Первый способ сделать навигационную панель горизонтальной
+ul {
+  display: flex;
+}
+*/
+/*При использовани второго способа
+ul {
+  clear: both;
+}
+*/
+
+li {
+  /*Второй способ 
+  float: left;
+  при этом способе нужно ставить очистку потока для родителя*/
+  /*Третий способ 
+  display: inline;*/
+  list-style: none;
+  border: 1px solid blue;
+  margin: 4px 4px;
+  padding: 10px;
+  width: 200px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+li:first-child {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}

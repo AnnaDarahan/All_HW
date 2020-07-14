@@ -1,0 +1,164 @@
+/*1. Первый уровень («карты»)*/
+.cards {
+  width: 600px;
+  height: 550px;
+  background-color: #0d5825;
+  position: relative;
+}
+.quote {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  padding-top: 20px;
+}
+blockquote {
+  font-weight: bold;
+}
+.hearts img {
+  width: 150px;
+  position: absolute;
+  top: 180px;
+  left: 225px;
+}
+.card1 {
+  transform: translateX(-50px) translateY(-10px) rotate(-20deg);
+}
+.card2 {
+  transform: translateX(0px) translateY(-5px) rotate(-10deg);
+}
+.card3 {
+  transform: translateX(60px) translateY(10px) rotate(5deg);
+}
+.hearts img:hover {
+  transition: linear 0.5s;
+}
+.card1:hover {
+  transform: translateX(-50px) translateY(-30px) rotate(-20deg);
+}
+.card2:hover {
+  transform: translateX(0px) translateY(-25px) rotate(-10deg);
+}
+.card3:hover {
+  transform: translateX(60px) translateY(-10px) rotate(5deg);
+}
+/*--2. Второй уровень(“усложняемся”)*/
+.boxes-block {
+  display: block;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  width: 300px;
+  height: 300px;
+}
+.boxes {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.box1 {
+  background-color: #f08080;
+}
+.box2 {
+  background-color: #6a5acd;
+  z-index: 1;
+  transform: translateX(40px) translateY(40px);
+}
+.box3 {
+  z-index: 0;
+  background-color: #00ff7f;
+  transform: translateX(80px) translateY(80px);
+}
+/*3.Третий уровень (“выезжающее меню”)*/
+.menu {
+  width: 300px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.menu-here {
+  width: 20px;
+  height: 500px;
+  background-color: grey;
+  color: white;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  text-align: center;
+  position: absolute;
+  display: block;
+}
+.menu-here:hover {
+  transform: translateX(300px);
+  transition: 1s 1s;
+}
+.menu-here:hover ~ .hold-menu {
+  transform: translateX(300px);
+  transition: 1s 1s;
+}
+.hold-menu {
+  left: -300px;
+  width: 300px;
+  height: 500px;
+  background: grey;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+}
+.hold-menu li::before {
+  content: "\1F538";
+  position: absolute;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 50px;
+  margin-top: 30px;
+  display: inline-block;
+}
+a:hover {
+  color: orange;
+}
+/*4. Кто совсем молодец ("по желанию")*/
+.block {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: moved_boxy;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+@keyframes moved_boxy {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 0;
+    top: 400px;
+    background-color: blue;
+  }
+  50% {
+    left: 400px;
+    top: 400px;
+    background-color: green;
+  }
+  75% {
+    left: 400px;
+    top: 0;
+    background-color: yellow;
+  }
+  100% {
+    left: 0;
+    top: 0;
+    background-color: red;
+  }
+}
